@@ -20,7 +20,7 @@ export const Board = () => {
 
   return (
     <>
-      <div className='status'>{nextPlayer ?? nextPlayer}</div>
+      <div className='status'>{winner ?? nextPlayer}</div>
       <div className='board-row'>
         <Square value={squares[0]} onClick={() => handleClick(0)} />
         <Square value={squares[1]} onClick={() => handleClick(1)} />
